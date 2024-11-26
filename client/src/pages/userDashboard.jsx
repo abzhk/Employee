@@ -13,7 +13,7 @@ function userDashboard() {
 
     useEffect(() => {
         if (isError) {
-            console.error('Error fetching user details:', error?.data?.message || error);
+            console.error('Error fetching user details:', error?.data?.message || error);  
         }}, [isError, error]);
 
     if (isLoading) {
